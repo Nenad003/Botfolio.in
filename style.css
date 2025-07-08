@@ -13,7 +13,11 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #ffffff;
-    background-color: #000000;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -139,7 +143,7 @@ body {
     font-size: 0.9rem;
     font-weight: 600;
     display: inline-block;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -270,7 +274,7 @@ body {
 /* About Section */
 .about {
     padding: 100px 0;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .about-content {
@@ -332,7 +336,7 @@ body {
 /* Services Section */
 .services {
     padding: 100px 0;
-    background-color: #111111;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .services-intro {
@@ -434,7 +438,7 @@ body {
 /* Demo Section */
 .demo {
     padding: 100px 0;
-    background-color: #111111;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .demo-intro {
@@ -532,7 +536,7 @@ body {
 /* How It Works Section */
 .how-it-works {
     padding: 100px 0;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .steps-grid {
@@ -585,7 +589,7 @@ body {
 /* Pricing Section */
 .pricing {
     padding: 100px 0;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .pricing-grid {
@@ -685,7 +689,7 @@ body {
 /* Testimonials Section */
 .testimonials {
     padding: 100px 0;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .testimonials-grid {
@@ -746,7 +750,7 @@ body {
 /* FAQ Section */
 .faq {
     padding: 100px 0;
-    background-color: #111111;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .faq-container {
@@ -811,7 +815,7 @@ body {
 /* Order Section */
 .order {
     padding: 100px 0;
-    background-color: #FF6B00;
+    background-color: rgba(255, 107, 0, 0.6);
     color: white;
 }
 
