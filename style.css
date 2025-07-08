@@ -893,15 +893,13 @@ body {
 .footer-logo {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #FF6B00;
     margin-bottom: 1rem;
 }
 
-.footer-logo i {
-    margin-right: 10px;
-    font-size: 1.8rem;
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    filter: brightness(1.2);
 }
 
 .footer-description {
