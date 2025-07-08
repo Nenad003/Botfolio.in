@@ -1,0 +1,178 @@
+You are a skilled front-end web developer.
+
+I want you to build a **single-page HTML + CSS website** for my resume startup **Botfolio.**
+
+---
+
+### 🧠 Botfolio — Company Overview
+
+**What we do:**  
+Botfolio helps freshers land jobs with:
+- LaTeX resume templates
+- Personal resume websites
+- AI-powered resume chatbots
+
+**Target Audience:**  
+Students applying for campus or off-campus placements.
+
+---
+
+### 🎨 Design Style
+
+I want the website inspired by **https://fin.ai**
+
+**Key Design Requirements:**
+- Clean, minimal aesthetic
+- Generous white space
+- Elegant sans-serif fonts like Montserrat or Inter
+- Soft color accents:
+  - Primary accent color → Orange `#FF6B00`
+  - Background → White
+  - Text → Very dark grey / black
+- Large typography for hero headings
+- Smooth scroll between sections
+- Subtle fade-in animations (like fin.ai sections sliding into view)
+- Modern layout with centered sections
+- Rounded buttons with hover states
+- Responsive design for mobile and desktop
+
+---
+
+### ✅ Specific Design Elements to Copy from fin.ai
+
+- Hero section with big headline, subheadline, and CTA
+- Clear 3-column layout for services
+- Wide horizontal sections alternating white and light grey
+- Modern pricing grid with cards
+- Simple, clean footer
+- Sticky top navbar
+
+---
+
+### 🧩 Website Sections to Include
+
+#### 1. **Top Navbar**
+- Sticky on scroll
+- Logo on the left:
+  - Use my logo: `/mnt/data/2.png`
+- Navigation links on the right:
+  - Home
+  - Services
+  - Demo
+  - Pricing
+  - Contact
+
+---
+
+#### 2. **Hero Section**
+- White background
+- Display Botfolio logo
+- Large headline:
+  > “Your Dream Job Deserves More Than Just a Resume.”
+- Subheadline:
+  > “Professional resumes, personal websites, and AI-powered prep — built for freshers, by freshers.”
+- CTA Button:
+  > [Get Started] → scrolls to Order section
+
+---
+
+#### 3. **About Botfolio**
+- Short paragraph explaining Botfolio’s mission
+- Layout similar to fin.ai’s “Empowering businesses” section
+
+---
+
+#### 4. **Our Services**
+- Three cards/icons in a single row:
+  - LaTeX Resume Templates
+  - Personal Resume Websites
+  - AI Resume Chatbots
+- Clean icons
+- Brief text under each service
+
+---
+
+#### 5. **Demo Website Section**
+- Title: “See Botfolio in Action”
+- Paragraph inviting users to view a live demo
+- Button:
+  - Text: “View Demo”
+  - Link to: `https://demo.botfolio.in` (placeholder)
+
+---
+
+#### 6. **How It Works**
+- 4-step horizontal section, inspired by fin.ai’s simple blocks
+  - Choose Package
+  - Fill Form
+  - We Build It
+  - Share Your Profile
+
+---
+
+#### 7. **Pricing Section**
+- White background
+- Modern pricing grid with 3 cards:
+  - Starter — ₹499 — Resume only
+  - Pro — ₹1499 — Resume + Website
+  - Premium — ₹2499 — Resume + Website + Chatbot
+- Each card:
+  - Title
+  - Short description
+  - Price
+  - CTA button: “Get Started”
+
+---
+
+#### 8. **Testimonials**
+- Two testimonial cards with:
+  - Quote text
+  - Student name + college/course
+
+---
+
+#### 9. **FAQ**
+- Accordion style if possible
+- Example questions:
+  - Is this ATS-friendly?
+  - How long does delivery take?
+  - Can I edit my resume later?
+
+---
+
+#### 10. **Order Now Section**
+- CTA block with:
+  - Button linking to Google Form (placeholder)
+  - WhatsApp “Click to Chat” link
+
+---
+
+#### 11. **Footer**
+- White or light grey background
+- Simple footer with:
+  - Email → hello@botfolio.in
+  - WhatsApp → +91-XXXXXXXXXX
+  - Instagram → @botfolio.in
+  - LinkedIn → @botfolio
+
+---
+
+### 🔧 Technical Instructions
+
+- Use semantic HTML5 tags
+- CSS file named `style.css`
+- Mobile-first responsive design
+- Comment CSS sections for clarity
+- Implement smooth scrolling
+- Add subtle animations for sections entering viewport
+- All links should be placeholders for now
+
+---
+
+### 🔗 Deliverables
+
+Generate:
+1. `index.html` → complete single-page HTML code
+2. `style.css` → well-commented, clean CSS
+
+This website will be deployed on Render and connected to my domain botfolio.in.
