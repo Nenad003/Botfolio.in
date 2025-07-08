@@ -110,7 +110,10 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 40px;
-    background: radial-gradient(circle at center, rgba(255, 107, 0, 0.1) 0%, rgba(0, 0, 0, 1) 70%);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -483,7 +486,7 @@ body {
 .demo-embed {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 400px;
     margin-bottom: 1.5rem;
     border-radius: 15px;
     overflow: hidden;
@@ -1061,7 +1064,7 @@ body {
     }
 
     .demo-embed {
-        height: 400px;
+        height: 300px;
     }
 
     .demo-card-header {
