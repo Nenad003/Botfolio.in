@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 .container {
@@ -28,7 +28,7 @@ body {
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 /* Navigation */
@@ -36,16 +36,16 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.98);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .nav-container {
@@ -84,7 +84,7 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -102,7 +102,7 @@ body {
 .nav-hamburger .bar {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #ffffff;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -110,7 +110,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 40px;
-    background: #ffffff;
+    background: radial-gradient(circle at center, rgba(255, 107, 0, 0.1) 0%, rgba(0, 0, 0, 1) 70%);
     text-align: center;
 }
 
@@ -143,7 +143,7 @@ body {
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 3rem;
-    color: #1a1a1a;
+    color: #ffffff;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -170,7 +170,7 @@ body {
 
 .feature-text {
     font-size: 1rem;
-    color: #666;
+    color: #cccccc;
 }
 
 .hero-buttons {
@@ -216,9 +216,9 @@ body {
 }
 
 .hero-companies {
-    background-color: #f8f9fa;
+    background-color: #111111;
     padding: 60px 0;
-    border-top: 1px solid #e9ecef;
+    border-top: 1px solid #333333;
 }
 
 .companies-container {
@@ -230,7 +230,7 @@ body {
 
 .companies-text {
     font-size: 1rem;
-    color: #666;
+    color: #cccccc;
     margin-bottom: 2rem;
     font-weight: 500;
 }
@@ -247,11 +247,11 @@ body {
 .company-logo {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #333;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #222222;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
 
@@ -264,7 +264,7 @@ body {
 /* About Section */
 .about {
     padding: 100px 0;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 .about-content {
@@ -277,7 +277,7 @@ body {
     font-size: 2.8rem;
     font-weight: 600;
     line-height: 1.3;
-    color: #1a1a1a;
+    color: #ffffff;
     margin-bottom: 3rem;
 }
 
@@ -305,7 +305,7 @@ body {
 
 .feature-description {
     font-size: 1rem;
-    color: #666;
+    color: #cccccc;
     font-weight: 500;
 }
 
@@ -326,7 +326,7 @@ body {
 /* Services Section */
 .services {
     padding: 100px 0;
-    background-color: #f8f9fa;
+    background-color: #111111;
 }
 
 .services-intro {
@@ -346,12 +346,12 @@ body {
     font-size: 2.8rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .services-description {
     font-size: 1.1rem;
-    color: #666;
+    color: #cccccc;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 2rem;
@@ -378,17 +378,17 @@ body {
 }
 
 .service-card {
-    background-color: #ffffff;
+    background-color: #222222;
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #333333;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .service-visual {
@@ -415,12 +415,12 @@ body {
 .service-title {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #ffffff;
     margin-bottom: 0;
 }
 
 .service-description {
-    color: #666;
+    color: #cccccc;
     line-height: 1.6;
     text-align: left;
 }
@@ -428,7 +428,7 @@ body {
 /* Demo Section */
 .demo {
     padding: 100px 0;
-    background-color: #f8f9fa;
+    background-color: #111111;
 }
 
 .demo-content {
@@ -440,7 +440,7 @@ body {
 
 .demo-text {
     font-size: 1.1rem;
-    color: #666;
+    color: #cccccc;
     margin-bottom: 2rem;
     line-height: 1.8;
 }
@@ -477,7 +477,7 @@ body {
 /* How It Works Section */
 .how-it-works {
     padding: 100px 0;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 .steps-grid {
@@ -510,18 +510,18 @@ body {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .step-description {
-    color: #666;
+    color: #cccccc;
     line-height: 1.6;
 }
 
 /* Pricing Section */
 .pricing {
     padding: 100px 0;
-    background-color: #f8f9fa;
+    background-color: #000000;
 }
 
 .pricing-grid {
@@ -532,19 +532,19 @@ body {
 }
 
 .pricing-card {
-    background-color: #ffffff;
+    background-color: #222222;
     padding: 2.5rem;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     position: relative;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #333333;
 }
 
 .pricing-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .pricing-card.featured {
@@ -569,11 +569,11 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .pricing-description {
-    color: #666;
+    color: #cccccc;
     margin-bottom: 1.5rem;
 }
 
@@ -593,6 +593,7 @@ body {
     padding: 0.5rem 0;
     display: flex;
     align-items: center;
+    color: #cccccc;
 }
 
 .pricing-features i {
@@ -620,7 +621,7 @@ body {
 /* Performance Section */
 .performance {
     padding: 100px 0;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 .performance-intro {
@@ -640,11 +641,11 @@ body {
     font-size: 2.8rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .performance-testimonial {
-    background-color: #f8f9fa;
+    background-color: #111111;
     padding: 3rem;
     border-radius: 20px;
     margin-bottom: 4rem;
@@ -668,19 +669,19 @@ body {
 .author-info h4 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #ffffff;
     margin-bottom: 0.25rem;
 }
 
 .author-info span {
-    color: #666;
+    color: #cccccc;
     font-size: 0.9rem;
 }
 
 .testimonial-quote {
     font-size: 1.3rem;
     line-height: 1.6;
-    color: #333;
+    color: #ffffff;
     font-style: italic;
     margin: 0;
 }
@@ -692,7 +693,7 @@ body {
 .performance-chart h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #ffffff;
     margin-bottom: 2rem;
 }
 
@@ -732,7 +733,7 @@ body {
 
 .bar-label {
     font-size: 0.9rem;
-    color: #666;
+    color: #cccccc;
     margin-top: 0.5rem;
     font-weight: 500;
 }
@@ -742,19 +743,19 @@ body {
     top: -25px;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .chart-note {
     font-size: 0.9rem;
-    color: #666;
+    color: #cccccc;
     font-style: italic;
 }
 
 /* FAQ Section */
 .faq {
     padding: 100px 0;
-    background-color: #f8f9fa;
+    background-color: #111111;
 }
 
 .faq-container {
@@ -763,11 +764,11 @@ body {
 }
 
 .faq-item {
-    background-color: #ffffff;
+    background-color: #222222;
     margin-bottom: 1rem;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .faq-question {
@@ -776,18 +777,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #222222;
     transition: all 0.3s ease;
 }
 
 .faq-question:hover {
-    background-color: #f8f9fa;
+    background-color: #333333;
 }
 
 .faq-question h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .faq-question i {
@@ -812,7 +813,7 @@ body {
 }
 
 .faq-answer p {
-    color: #666;
+    color: #cccccc;
     line-height: 1.6;
 }
 
@@ -835,6 +836,7 @@ body {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     opacity: 0.9;
+    color: #ffffff;
 }
 
 .order-buttons {
