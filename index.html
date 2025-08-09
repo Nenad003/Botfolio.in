@@ -2,43 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Botfolio - Your Dream Job Deserves More Than Just a Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css?v=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
     <!-- Top Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="logo.png" alt="Botfolio Logo" class="nav-logo-img">
+                <img src="Botfolio_Transparent_bg.png" alt="Botfolio Logo" class="nav-logo-img">
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#demo" class="nav-link">Demo</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#pricing" class="nav-link">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
             <div class="nav-hamburger" id="nav-hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-tally-open="wLxoo1" data-tally-layout="modal" data-tally-width="800" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Contact Us</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -46,29 +41,41 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-badge">
-                    <span>The best-performing resume platform now comes with AI-powered prep</span>
-                </div>
-                <h1 class="hero-title">Your Dream Job Deserves More Than Just a Resume.</h1>
-
-                <div class="hero-buttons">
-                    <button class="hero-cta primary" onclick="scrollToSection('order')">Start free trial</button>
-                    <button class="hero-cta secondary" onclick="scrollToSection('demo')">View demo</button>
-                </div>
+                <div style="height: 4rem;"></div>
+                <h1 class="hero-title">Your Dream Job Deserves More Than Just a <span id="hero-alternate-text"></span></h1>
+                <div class="hero-features-list">Get your ATS Friendly Resume <span class='plus-orange'>+</span> Portfolio Website <span class='plus-orange'>+</span> AI Resume Chatbot</div>
             </div>
         </div>
         <div class="hero-companies">
             <div class="companies-container">
                 <div class="companies-text">Trusted by students from</div>
                 <div class="companies-logos">
-                    <span class="company-logo">IIT Delhi</span>
-                    <span class="company-logo">NIT Surat</span>
-                    <span class="company-logo">BITS Pilani</span>
-                    <span class="company-logo">VIT Vellore</span>
-                    <span class="company-logo">DTU</span>
-                    <span class="company-logo">NSIT</span>
-                    <span class="company-logo">IIIT Hyderabad</span>
-                    <span class="company-logo">Manipal</span>
+                    <div class="marquee-inner">
+                        <span class="company-logo">IIT Delhi</span>
+                        <span class="company-logo">NIT Surat</span>
+                        <span class="company-logo">BITS Pilani</span>
+                        <span class="company-logo">VIT Vellore</span>
+                        <span class="company-logo">DTU</span>
+                        <span class="company-logo">NSIT</span>
+                        <span class="company-logo">IIIT Hyderabad</span>
+                        <span class="company-logo">Manipal</span>
+                        <span class="company-logo">IIT Delhi</span>
+                        <span class="company-logo">NIT Surat</span>
+                        <span class="company-logo">BITS Pilani</span>
+                        <span class="company-logo">VIT Vellore</span>
+                        <span class="company-logo">DTU</span>
+                        <span class="company-logo">NSIT</span>
+                        <span class="company-logo">IIIT Hyderabad</span>
+                        <span class="company-logo">Manipal</span>
+                        <span class="company-logo">IIT Delhi</span>
+                        <span class="company-logo">NIT Surat</span>
+                        <span class="company-logo">BITS Pilani</span>
+                        <span class="company-logo">VIT Vellore</span>
+                        <span class="company-logo">DTU</span>
+                        <span class="company-logo">NSIT</span>
+                        <span class="company-logo">IIIT Hyderabad</span>
+                        <span class="company-logo">Manipal</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,12 +87,12 @@
     <section id="services" class="services">
         <div class="container">
             <div class="services-intro">
-                <span class="services-number">01</span>
-                <h2 class="section-title">Complete, fully configurable Resume System</h2>
+                
+                <h2 class="section-title">Complete and fully configurable Portfolio System</h2>
                 <p class="services-description">
-                    Botfolio is the only complete, fully configurable Resume System for freshers—empowering students to customize, test, and continuously improve their job applications through a no-code user experience anyone can manage.
+                    From sleek resumes to interactive portfolio sites, Botfolio helps job-seeking students stand out with professional <b>ATS-Friendly Resume designs</b>, <b>Personal Websites</b>, and <b>AI Resume Chatbots</b> to boost interview confidence.
                 </p>
-                <a href="#capabilities" class="services-link">Explore all capabilities</a>
+                <a href="#" data-tally-open="wLxoo1" data-tally-layout="modal" data-tally-width="800" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" class="services-link">Get in touch</a>
             </div>
             <div class="services-grid">
                 <div class="service-card">
@@ -93,7 +100,7 @@
                         <div class="service-icon">
                             <i class="fas fa-file-alt"></i>
                         </div>
-                        <h3 class="service-title">LaTeX Resume Templates</h3>
+                        <h3 class="service-title">ATS Friendly Resume</h3>
                     </div>
                     <p class="service-description">
                         Professional, ATS-friendly resume templates designed specifically for freshers. 
@@ -140,8 +147,7 @@
             </div>
             <div class="demo-card">
                 <div class="demo-card-header">
-                    <h3>Live Demo</h3>
-                    <span class="demo-badge">Interactive</span>
+                    <h3><span class="green-dot"></span> Live Demo</h3>
                 </div>
                 <div class="demo-embed">
                     <iframe src="https://botfolio.info/#chat" title="Botfolio Demo" frameborder="0" allowfullscreen></iframe>
@@ -178,7 +184,7 @@
                 </div>
                 <div class="step-card">
                     <div class="step-number">04</div>
-                    <h3 class="step-title">Share Your Profile</h3>
+                    <h3 class="step-title">Ace Your Interviews</h3>
                     <p class="step-description">Launch your new professional presence and start applying with confidence.</p>
                 </div>
             </div>
@@ -193,42 +199,42 @@
                 <div class="pricing-card">
                     <h3 class="pricing-title">Starter</h3>
                     <p class="pricing-description">Perfect for students just starting their job search</p>
-                    <div class="pricing-price">₹499</div>
+                    <div class="pricing-price">₹997</div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> LaTeX Resume Template</li>
-                        <li><i class="fas fa-check"></i> ATS-Friendly Design</li>
+                        <li><i class="fas fa-check"></i> 1 ATS-Friendly Resume</li>
+                        <li><i class="fas fa-check"></i> 1 ATS-Friendly Cover Letter</li>
                         <li><i class="fas fa-check"></i> 2 Revisions</li>
                         <li><i class="fas fa-check"></i> Email Support</li>
                     </ul>
-                    <button class="pricing-btn" onclick="scrollToSection('order')">Get Started</button>
+                    <a class="pricing-btn" href="https://wa.me/916360510127?text=Hi%2C%20I%20want%20to%20get%20my%20resume%20made" target="_blank" rel="noopener" onclick="return true">Get Started</a>
                 </div>
                 <div class="pricing-card featured">
                     <div class="pricing-badge">Most Popular</div>
                     <h3 class="pricing-title">Pro</h3>
                     <p class="pricing-description">Complete package for serious job seekers</p>
-                    <div class="pricing-price">₹1499</div>
+                    <div class="pricing-price">₹1,997</div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> LaTeX Resume Template</li>
-                        <li><i class="fas fa-check"></i> Personal Resume Website</li>
+                        <li><i class="fas fa-check"></i> 1 ATS-Friendly Resume</li>
+                        <li><i class="fas fa-check"></i> 1 Personal Resume Website</li>
                         <li><i class="fas fa-check"></i> Mobile Responsive Design</li>
-                        <li><i class="fas fa-check"></i> 5 Revisions</li>
+                        <li><i class="fas fa-check"></i> 2 Revisions</li>
                         <li><i class="fas fa-check"></i> Priority Support</li>
                     </ul>
-                    <button class="pricing-btn" onclick="scrollToSection('order')">Get Started</button>
+                    <a class="pricing-btn" href="https://wa.me/916360510127?text=Hi%2C%20I%20want%20to%20get%20my%20resume%20made" target="_blank" rel="noopener" onclick="return true">Get Started</a>
                 </div>
                 <div class="pricing-card">
                     <h3 class="pricing-title">Premium</h3>
                     <p class="pricing-description">Everything you need to stand out from the competition</p>
-                    <div class="pricing-price">₹2499</div>
+                    <div class="pricing-price">₹3,997</div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> LaTeX Resume Template</li>
+                        <li><i class="fas fa-check"></i> ATS-Friendly Resume</li>
                         <li><i class="fas fa-check"></i> Personal Resume Website</li>
                         <li><i class="fas fa-check"></i> AI Resume Chatbot</li>
-                        <li><i class="fas fa-check"></i> Unlimited Revisions</li>
-                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                        <li><i class="fas fa-check"></i> 3 Revisions</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
                         <li><i class="fas fa-check"></i> LinkedIn Optimization</li>
                     </ul>
-                    <button class="pricing-btn" onclick="scrollToSection('order')">Get Started</button>
+                    <a class="pricing-btn" href="https://wa.me/916360510127?text=Hi%2C%20I%20want%20to%20get%20my%20resume%20made" target="_blank" rel="noopener" onclick="return true">Get Started</a>
                 </div>
             </div>
         </div>
@@ -299,35 +305,7 @@
                         <p>Absolutely! We provide the source files and instructions on how to edit your resume. Our support team is also available to help with updates.</p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What if I'm not satisfied with the result?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We offer unlimited revisions until you're completely satisfied. If you're still not happy, we provide a full refund within 7 days of delivery.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Order Now Section -->
-    <section id="order" class="order">
-        <div class="container">
-            <div class="order-content">
-                <h2 class="section-title">Ready to Transform Your Career?</h2>
-                <p class="order-text">Join hundreds of students who have already landed their dream jobs with Botfolio.</p>
-                <div class="order-buttons">
-                    <a href="#" class="order-btn primary">
-                        <i class="fas fa-shopping-cart"></i>
-                        Order Now
-                    </a>
-                    <a href="https://wa.me/919999999999" target="_blank" class="order-btn secondary">
-                        <i class="fab fa-whatsapp"></i>
-                        Chat on WhatsApp
-                    </a>
-                </div>
             </div>
         </div>
     </section>
@@ -338,7 +316,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="logo.png" alt="Botfolio Logo" class="footer-logo-img">
+                        <img src="Botfolio_Transparent_bg.png" alt="Botfolio Logo" class="footer-logo-img">
                     </div>
                     <p class="footer-description">
                         Empowering freshers to land their dream jobs with professional resumes, 
@@ -349,7 +327,7 @@
                     <h4>Contact Info</h4>
                     <div class="contact-info">
                         <p><i class="fas fa-envelope"></i> hello@botfolio.in</p>
-                        <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
+                        <p><i class="fas fa-phone"></i> +91-9960865675</p>
                     </div>
                 </div>
                 <div class="footer-section">

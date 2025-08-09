@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('nav-menu');
     const navHamburger = document.getElementById('nav-hamburger');
     const navLinks = document.querySelectorAll('.nav-link');
+    // Sidebar links
+    const sidebarLinks = document.querySelectorAll('.sidebar-item a');
 
     // Handle scroll effect on navbar
     window.addEventListener('scroll', function() {
@@ -38,6 +40,22 @@ document.addEventListener('DOMContentLoaded', function() {
             // Close mobile menu
             navMenu.classList.remove('active');
             navHamburger.classList.remove('active');
+        });
+    });
+
+    // Sidebar link smooth scroll and highlight
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - 70;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 
@@ -101,21 +119,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Active nav link highlighting
+    // Active nav link highlighting for both nav and sidebar
     window.addEventListener('scroll', function() {
         const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-link');
-        
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
             if (window.scrollY >= (sectionTop - 200)) {
                 current = section.getAttribute('id');
             }
         });
-
         navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+        sidebarLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href').substring(1) === current) {
                 link.classList.add('active');
@@ -190,3 +210,54 @@ document.addEventListener('DOMContentLoaded', function() {
         pricingObserver.observe(card);
     });
 });
+
+// Typing animation for hero alternate text
+const heroWords = ["Resume", "Website"];
+const heroAlternateText = document.getElementById("hero-alternate-text");
+let heroWordIndex = 0;
+let charIndex = 0;
+let typing = true;
+
+function typeHeroWord() {
+    if (!heroAlternateText) return;
+    if (typing) {
+        if (charIndex < heroWords[heroWordIndex].length) {
+            heroAlternateText.textContent += heroWords[heroWordIndex][charIndex];
+            charIndex++;
+            setTimeout(typeHeroWord, 80);
+        } else {
+            typing = false;
+            setTimeout(typeHeroWord, 2500);
+        }
+    } else {
+        if (charIndex > 0) {
+            heroAlternateText.textContent = heroAlternateText.textContent.slice(0, -1);
+            charIndex--;
+            setTimeout(typeHeroWord, 40);
+        } else {
+            typing = true;
+            heroWordIndex = (heroWordIndex + 1) % heroWords.length;
+            setTimeout(typeHeroWord, 400);
+        }
+    }
+}
+typeHeroWord();
+
+// Sidebar toggle functionality
+const sidebar = document.getElementById('sidebar');
+const sidebarToggle = document.getElementById('sidebar-toggle');
+const sidebarToggleIcon = document.getElementById('sidebar-toggle-icon');
+
+if (sidebar && sidebarToggle && sidebarToggleIcon) {
+    sidebarToggle.addEventListener('click', function() {
+        sidebar.classList.toggle('open');
+        sidebar.classList.toggle('closed');
+        if (sidebar.classList.contains('open')) {
+            sidebarToggleIcon.classList.remove('fa-chevron-right');
+            sidebarToggleIcon.classList.add('fa-times');
+        } else {
+            sidebarToggleIcon.classList.remove('fa-times');
+            sidebarToggleIcon.classList.add('fa-chevron-right');
+        }
+    });
+}
